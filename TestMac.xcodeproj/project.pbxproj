@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C26DC28924BC4B7B007EE193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DC28824BC4B7B007EE193 /* AppDelegate.swift */; };
+		C26DC28B24BC4B7B007EE193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DC28A24BC4B7B007EE193 /* ViewController.swift */; };
+		C26DC28D24BC4B7C007EE193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26DC28C24BC4B7C007EE193 /* Assets.xcassets */; };
+		C26DC29024BC4B7C007EE193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26DC28E24BC4B7C007EE193 /* Main.storyboard */; };
+		C26DC2C124BC57EC007EE193 /* ssl_client2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC29A24BC57EA007EE193 /* ssl_client2.cpp */; };
+		C26DC2C224BC57EC007EE193 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DC29B24BC57EA007EE193 /* libmbedtls.a */; };
+		C26DC2C324BC57EC007EE193 /* include in Resources */ = {isa = PBXBuildFile; fileRef = C26DC29C24BC57EA007EE193 /* include */; };
+		C26DC2C424BC57EC007EE193 /* http_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC29D24BC57EA007EE193 /* http_client.cpp */; };
+		C26DC2C524BC57EC007EE193 /* fileutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC29F24BC57EA007EE193 /* fileutl.cpp */; };
+		C26DC2C624BC57EC007EE193 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2A324BC57EB007EE193 /* log.cpp */; };
+		C26DC2C724BC57EC007EE193 /* network_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2A424BC57EB007EE193 /* network_service.cpp */; };
+		C26DC2C824BC57EC007EE193 /* prime_feature_objc_wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2A524BC57EB007EE193 /* prime_feature_objc_wrapper.mm */; };
+		C26DC2C924BC57EC007EE193 /* timeutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2A624BC57EB007EE193 /* timeutl.cpp */; };
+		C26DC2CA24BC57EC007EE193 /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2A824BC57EB007EE193 /* CPP.cpp */; };
+		C26DC2CB24BC57EC007EE193 /* sockhttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B024BC57EB007EE193 /* sockhttp.cpp */; };
+		C26DC2CC24BC57EC007EE193 /* sockutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B124BC57EB007EE193 /* sockutl.cpp */; };
+		C26DC2CD24BC57EC007EE193 /* stringutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B224BC57EB007EE193 /* stringutl.cpp */; };
+		C26DC2CE24BC57EC007EE193 /* sysutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B424BC57EB007EE193 /* sysutl.cpp */; };
+		C26DC2CF24BC57EC007EE193 /* network_objc_wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B724BC57EB007EE193 /* network_objc_wrapper.mm */; };
+		C26DC2D024BC57EC007EE193 /* obfuscation_utl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B824BC57EC007EE193 /* obfuscation_utl.cpp */; };
+		C26DC2D124BC57EC007EE193 /* CPP-Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2B924BC57EC007EE193 /* CPP-Wrapper.mm */; };
+		C26DC2D224BC57EC007EE193 /* vpn_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C26DC2BA24BC57EC007EE193 /* vpn_packet.cpp */; };
+		C26DC2D324BC57EC007EE193 /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DC2BC24BC57EC007EE193 /* libmbedx509.a */; };
+		C26DC2D424BC57EC007EE193 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DC2BD24BC57EC007EE193 /* libmbedcrypto.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C26DC28524BC4B7B007EE193 /* TinyVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26DC28824BC4B7B007EE193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C26DC28A24BC4B7B007EE193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C26DC28C24BC4B7C007EE193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26DC28F24BC4B7C007EE193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C26DC29124BC4B7C007EE193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C26DC29224BC4B7C007EE193 /* TestMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestMac.entitlements; sourceTree = "<group>"; };
+		C26DC29924BC57EA007EE193 /* TestMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestMac-Bridging-Header.h"; sourceTree = "<group>"; };
+		C26DC29A24BC57EA007EE193 /* ssl_client2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ssl_client2.cpp; sourceTree = "<group>"; };
+		C26DC29B24BC57EA007EE193 /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedtls.a; sourceTree = "<group>"; };
+		C26DC29C24BC57EA007EE193 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		C26DC29D24BC57EA007EE193 /* http_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http_client.cpp; sourceTree = "<group>"; };
+		C26DC29E24BC57EA007EE193 /* obfuscation_utl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obfuscation_utl.h; sourceTree = "<group>"; };
+		C26DC29F24BC57EA007EE193 /* fileutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileutl.cpp; sourceTree = "<group>"; };
+		C26DC2A024BC57EA007EE193 /* prime_feature_objc_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime_feature_objc_wrapper.h; sourceTree = "<group>"; };
+		C26DC2A124BC57EA007EE193 /* CPP-Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPP-Wrapper.h"; sourceTree = "<group>"; };
+		C26DC2A224BC57EB007EE193 /* sockutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sockutl.h; sourceTree = "<group>"; };
+		C26DC2A324BC57EB007EE193 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		C26DC2A424BC57EB007EE193 /* network_service.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_service.cpp; sourceTree = "<group>"; };
+		C26DC2A524BC57EB007EE193 /* prime_feature_objc_wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = prime_feature_objc_wrapper.mm; sourceTree = "<group>"; };
+		C26DC2A624BC57EB007EE193 /* timeutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutl.cpp; sourceTree = "<group>"; };
+		C26DC2A724BC57EB007EE193 /* CPP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPP.hpp; sourceTree = "<group>"; };
+		C26DC2A824BC57EB007EE193 /* CPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPP.cpp; sourceTree = "<group>"; };
+		C26DC2A924BC57EB007EE193 /* http_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_client.h; sourceTree = "<group>"; };
+		C26DC2AA24BC57EB007EE193 /* vpn_packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vpn_packet.h; sourceTree = "<group>"; };
+		C26DC2AB24BC57EB007EE193 /* network_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_service.h; sourceTree = "<group>"; };
+		C26DC2AC24BC57EB007EE193 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		C26DC2AD24BC57EB007EE193 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		C26DC2AE24BC57EB007EE193 /* prime_feature.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = prime_feature.hpp; sourceTree = "<group>"; };
+		C26DC2B024BC57EB007EE193 /* sockhttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sockhttp.cpp; sourceTree = "<group>"; };
+		C26DC2B124BC57EB007EE193 /* sockutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sockutl.cpp; sourceTree = "<group>"; };
+		C26DC2B224BC57EB007EE193 /* stringutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stringutl.cpp; sourceTree = "<group>"; };
+		C26DC2B324BC57EB007EE193 /* stringutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringutl.h; sourceTree = "<group>"; };
+		C26DC2B424BC57EB007EE193 /* sysutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sysutl.cpp; sourceTree = "<group>"; };
+		C26DC2B524BC57EB007EE193 /* fileutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileutl.h; sourceTree = "<group>"; };
+		C26DC2B624BC57EB007EE193 /* timeutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeutl.h; sourceTree = "<group>"; };
+		C26DC2B724BC57EB007EE193 /* network_objc_wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = network_objc_wrapper.mm; sourceTree = "<group>"; };
+		C26DC2B824BC57EC007EE193 /* obfuscation_utl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = obfuscation_utl.cpp; sourceTree = "<group>"; };
+		C26DC2B924BC57EC007EE193 /* CPP-Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CPP-Wrapper.mm"; sourceTree = "<group>"; };
+		C26DC2BA24BC57EC007EE193 /* vpn_packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vpn_packet.cpp; sourceTree = "<group>"; };
+		C26DC2BB24BC57EC007EE193 /* network_objc_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_objc_wrapper.h; sourceTree = "<group>"; };
+		C26DC2BC24BC57EC007EE193 /* libmbedx509.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedx509.a; sourceTree = "<group>"; };
+		C26DC2BD24BC57EC007EE193 /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbedcrypto.a; sourceTree = "<group>"; };
+		C26DC2BE24BC57EC007EE193 /* ssl_client2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_client2.h; sourceTree = "<group>"; };
+		C26DC2BF24BC57EC007EE193 /* sockhttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sockhttp.h; sourceTree = "<group>"; };
+		C26DC2C024BC57EC007EE193 /* sysutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysutl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C26DC28224BC4B7B007EE193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26DC2C224BC57EC007EE193 /* libmbedtls.a in Frameworks */,
+				C26DC2D424BC57EC007EE193 /* libmbedcrypto.a in Frameworks */,
+				C26DC2D324BC57EC007EE193 /* libmbedx509.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C26DC27C24BC4B7B007EE193 = {
+			isa = PBXGroup;
+			children = (
+				C26DC28724BC4B7B007EE193 /* TestMac */,
+				C26DC28624BC4B7B007EE193 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C26DC28624BC4B7B007EE193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26DC28524BC4B7B007EE193 /* TinyVPN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26DC28724BC4B7B007EE193 /* TestMac */ = {
+			isa = PBXGroup;
+			children = (
+				C26DC29824BC579F007EE193 /* cpp */,
+				C26DC28824BC4B7B007EE193 /* AppDelegate.swift */,
+				C26DC28A24BC4B7B007EE193 /* ViewController.swift */,
+				C26DC28C24BC4B7C007EE193 /* Assets.xcassets */,
+				C26DC28E24BC4B7C007EE193 /* Main.storyboard */,
+				C26DC29124BC4B7C007EE193 /* Info.plist */,
+				C26DC29224BC4B7C007EE193 /* TestMac.entitlements */,
+			);
+			path = TestMac;
+			sourceTree = "<group>";
+		};
+		C26DC29824BC579F007EE193 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				C26DC2AC24BC57EB007EE193 /* base.h */,
+				C26DC2A124BC57EA007EE193 /* CPP-Wrapper.h */,
+				C26DC2B924BC57EC007EE193 /* CPP-Wrapper.mm */,
+				C26DC2A824BC57EB007EE193 /* CPP.cpp */,
+				C26DC2A724BC57EB007EE193 /* CPP.hpp */,
+				C26DC29F24BC57EA007EE193 /* fileutl.cpp */,
+				C26DC2B524BC57EB007EE193 /* fileutl.h */,
+				C26DC29D24BC57EA007EE193 /* http_client.cpp */,
+				C26DC2A924BC57EB007EE193 /* http_client.h */,
+				C26DC29C24BC57EA007EE193 /* include */,
+				C26DC2BD24BC57EC007EE193 /* libmbedcrypto.a */,
+				C26DC29B24BC57EA007EE193 /* libmbedtls.a */,
+				C26DC2BC24BC57EC007EE193 /* libmbedx509.a */,
+				C26DC2A324BC57EB007EE193 /* log.cpp */,
+				C26DC2AD24BC57EB007EE193 /* log.h */,
+				C26DC2BB24BC57EC007EE193 /* network_objc_wrapper.h */,
+				C26DC2B724BC57EB007EE193 /* network_objc_wrapper.mm */,
+				C26DC2A424BC57EB007EE193 /* network_service.cpp */,
+				C26DC2AB24BC57EB007EE193 /* network_service.h */,
+				C26DC2B824BC57EC007EE193 /* obfuscation_utl.cpp */,
+				C26DC29E24BC57EA007EE193 /* obfuscation_utl.h */,
+				C26DC2A024BC57EA007EE193 /* prime_feature_objc_wrapper.h */,
+				C26DC2A524BC57EB007EE193 /* prime_feature_objc_wrapper.mm */,
+				C26DC2AE24BC57EB007EE193 /* prime_feature.hpp */,
+				C26DC2B024BC57EB007EE193 /* sockhttp.cpp */,
+				C26DC2BF24BC57EC007EE193 /* sockhttp.h */,
+				C26DC2B124BC57EB007EE193 /* sockutl.cpp */,
+				C26DC2A224BC57EB007EE193 /* sockutl.h */,
+				C26DC29A24BC57EA007EE193 /* ssl_client2.cpp */,
+				C26DC2BE24BC57EC007EE193 /* ssl_client2.h */,
+				C26DC2B224BC57EB007EE193 /* stringutl.cpp */,
+				C26DC2B324BC57EB007EE193 /* stringutl.h */,
+				C26DC2B424BC57EB007EE193 /* sysutl.cpp */,
+				C26DC2C024BC57EC007EE193 /* sysutl.h */,
+				C26DC2A624BC57EB007EE193 /* timeutl.cpp */,
+				C26DC2B624BC57EB007EE193 /* timeutl.h */,
+				C26DC2BA24BC57EC007EE193 /* vpn_packet.cpp */,
+				C26DC2AA24BC57EB007EE193 /* vpn_packet.h */,
+				C26DC29924BC57EA007EE193 /* TestMac-Bridging-Header.h */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C26DC28424BC4B7B007EE193 /* TinyVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C26DC29524BC4B7C007EE193 /* Build configuration list for PBXNativeTarget "TinyVPN" */;
+			buildPhases = (
+				C26DC28124BC4B7B007EE193 /* Sources */,
+				C26DC28224BC4B7B007EE193 /* Frameworks */,
+				C26DC28324BC4B7B007EE193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyVPN;
+			productName = TestMac;
+			productReference = C26DC28524BC4B7B007EE193 /* TinyVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C26DC27D24BC4B7B007EE193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Hench;
+				TargetAttributes = {
+					C26DC28424BC4B7B007EE193 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = C26DC28024BC4B7B007EE193 /* Build configuration list for PBXProject "TestMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C26DC27C24BC4B7B007EE193;
+			productRefGroup = C26DC28624BC4B7B007EE193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C26DC28424BC4B7B007EE193 /* TinyVPN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C26DC28324BC4B7B007EE193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26DC2C324BC57EC007EE193 /* include in Resources */,
+				C26DC28D24BC4B7C007EE193 /* Assets.xcassets in Resources */,
+				C26DC29024BC4B7C007EE193 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C26DC28124BC4B7B007EE193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26DC2D124BC57EC007EE193 /* CPP-Wrapper.mm in Sources */,
+				C26DC2C624BC57EC007EE193 /* log.cpp in Sources */,
+				C26DC2C724BC57EC007EE193 /* network_service.cpp in Sources */,
+				C26DC2C824BC57EC007EE193 /* prime_feature_objc_wrapper.mm in Sources */,
+				C26DC2CE24BC57EC007EE193 /* sysutl.cpp in Sources */,
+				C26DC2C124BC57EC007EE193 /* ssl_client2.cpp in Sources */,
+				C26DC2D024BC57EC007EE193 /* obfuscation_utl.cpp in Sources */,
+				C26DC2CD24BC57EC007EE193 /* stringutl.cpp in Sources */,
+				C26DC2CF24BC57EC007EE193 /* network_objc_wrapper.mm in Sources */,
+				C26DC28B24BC4B7B007EE193 /* ViewController.swift in Sources */,
+				C26DC2D224BC57EC007EE193 /* vpn_packet.cpp in Sources */,
+				C26DC2CC24BC57EC007EE193 /* sockutl.cpp in Sources */,
+				C26DC2C524BC57EC007EE193 /* fileutl.cpp in Sources */,
+				C26DC2C924BC57EC007EE193 /* timeutl.cpp in Sources */,
+				C26DC2CA24BC57EC007EE193 /* CPP.cpp in Sources */,
+				C26DC2C424BC57EC007EE193 /* http_client.cpp in Sources */,
+				C26DC28924BC4B7B007EE193 /* AppDelegate.swift in Sources */,
+				C26DC2CB24BC57EC007EE193 /* sockhttp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C26DC28E24BC4B7C007EE193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26DC28F24BC4B7C007EE193 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C26DC29324BC4B7C007EE193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C26DC29424BC4B7C007EE193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C26DC29624BC4B7C007EE193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TestMac/TestMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					MAC_PLATFORM,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TestMac/cpp/include";
+				INFOPLIST_FILE = TestMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestMac/cpp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyvpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestMac/cpp/TestMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C26DC29724BC4B7C007EE193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TestMac/TestMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = MAC_PLATFORM;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/TestMac/cpp/include";
+				INFOPLIST_FILE = TestMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestMac/cpp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyvpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestMac/cpp/TestMac-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C26DC28024BC4B7B007EE193 /* Build configuration list for PBXProject "TestMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26DC29324BC4B7C007EE193 /* Debug */,
+				C26DC29424BC4B7C007EE193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C26DC29524BC4B7C007EE193 /* Build configuration list for PBXNativeTarget "TinyVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26DC29624BC4B7C007EE193 /* Debug */,
+				C26DC29724BC4B7C007EE193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C26DC27D24BC4B7B007EE193 /* Project object */;
+}
